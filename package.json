@@ -1,6 +1,6 @@
 {
   "name": "sy66-currencyconverter",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Make A Currency Converter With TypeScript, Node.js And Inquirer Chalk.",
   "main": "index.js",
   "type": "module",

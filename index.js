@@ -1,7 +1,7 @@
 #! /usr/bin/env node 
 import inquirer from "inquirer";
 import chalk from "chalk";
-console.log(chalk.magentaBright.bold('\n \t Welcome To codeWithSahil - Currency Converterc Application\n'));
+console.log(chalk.magentaBright.bold('\n \t Welcome To codeWithSahil - Currency Converter Application\n'));
 let condition = true;
 while (condition) {
     const currency = {
@@ -62,7 +62,7 @@ while (condition) {
     let amount = userAnswer.amount;
     let baseAmount = amount / fromAmount;
     let convertAmount = baseAmount * toAmount;
-    console.log(chalk.yellowBright.bold(`\n \t ${convertAmount} Your Convert Amonut\n`));
+    console.log(chalk.yellowBright.bold(`\n \t ${Math.round(convertAmount)} Your Convert Amonut\n`));
     let restartAns = await inquirer.prompt([
         {
             name: 'restart',

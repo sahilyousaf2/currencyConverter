@@ -66,7 +66,7 @@ let toAmount=currency[userAnswer.to]
 let amount=userAnswer.amount
 let baseAmount=amount/fromAmount
 let convertAmount=baseAmount*toAmount
-console.log(chalk.yellowBright.bold(`\n \t ${convertAmount} Your Convert Amonut\n`));
+console.log(chalk.yellowBright.bold(`\n \t ${Math.round(convertAmount)} Your Convert Amonut\n`));
 let restartAns=await inquirer.prompt([
     {
         name:'restart',
